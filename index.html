@@ -1,68 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lahiru Dasun | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="container">
-      <h1>Lahiru Dasun</h1>
-      <p>Software Engineer | Dream Chaser 💻🚀</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </header>
 
-  <nav class="navbar">
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm Lahiru, a passionate software engineering student working hard to reach the top. I enjoy creating apps, exploring ethical hacking, and turning ideas into real-world projects.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>💬 Chat App</h3>
-          <p>React Native app for real-time messaging with friends and groups.</p>
+    <!-- SKILLS -->
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h4>Java</h4>
+          <div class="bar"><div class="bar-fill" style="width:90%">90%</div></div>
         </div>
-        <div class="project-card">
-          <h3>💧 HydrateWise</h3>
-          <p>IoT water-saving system for homes and communities. Built for smart cities.</p>
+        <div class="skill-card">
+          <h4>React Native</h4>
+          <div class="bar"><div class="bar-fill" style="width:85%">85%</div></div>
         </div>
-        <div class="project-card">
-          <h3>🌱 FarmConnect</h3>
-          <p>Connects farmers with buyers to reduce waste and boost efficiency.</p>
+        <div class="skill-card">
+          <h4>Python</h4>
+          <div class="bar"><div class="bar-fill" style="width:80%">80%</div></div>
+        </div>
+        <div class="skill-card">
+          <h4>Ethical Hacking</h4>
+          <div class="bar"><div class="bar-fill" style="width:70%">70%</div></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:lahiru@example.com">lahirudasun777@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/lahirudasun777" target="_blank">github.com/lahirudasun777</a></p>
-    </div>
-  </section>
+    <!-- PROJECTS -->
+    <section class="container projects" id="projects">
+      <h2>Projects</h2>
+      <p class="muted">Click a project to view details or open the repo/demo.</p>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Lahiru Dasun | Powered by GitHub Pages</p>
+      <div class="project-grid">
+        <!-- Example project card - duplicate & edit for each project -->
+        <article class="project-card">
+          <img src="assets/project-chatapp.png" alt="Chat App screenshot">
+          <div class="project-body">
+            <h3>Chat App (React Native)</h3>
+            <p>Real-time chat app using Firebase. Features: authentication, real-time messages, media sharing.</p>
+            <div class="project-tags">React Native • Firebase • JS</div>
+            <div class="project-actions">
+              <a class="btn" href="#" target="_blank">Live Demo</a>
+              <a class="btn outline" href="https://github.com/lahirudasun777/chat-app" target="_blank">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/project-discover.png" alt="Discover USA Wonders screenshot">
+          <div class="project-body">
+            <h3>Discover USA Wonders</h3>
+            <p>Travel discovery site with curated destinations and itinerary suggestions.</p>
+            <div class="project-tags">HTML • CSS • JS</div>
+            <div class="project-actions">
+              <a class="btn" href="#" target="_blank">Live Demo</a>
+              <a class="btn outline" href="https://github.com/lahirudasun777/Discover-USA-Wonders" target="_blank">Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="container certs" id="certs">
+      <h2>Certificates</h2>
+      <p class="muted">Click to view certificate (PDF or image).</p>
+
+      <div class="cert-grid">
+        <div class="cert-card" tabindex="0" data-src="assets/cert-python.png">
+          <img src="assets/cert-python-thumb.png" alt="Python Certificate">
+          <div class="cert-body">
+            <h4>Python for Everybody</h4>
+            <p>Issued by University of Michigan — 2024</p>
+          </div>
+        </div>
+
+        <div class="cert-card" tabindex="0" data-src="assets/cert-react.png">
+          <img src="assets/cert-react-thumb.png" alt="React Certificate">
+          <div class="cert-body">
+            <h4>React Basics</h4>
+            <p>Issued by FreeCodeCamp — 2024</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="container tools" id="tools">
+      <h2>Tools & Software</h2>
+      <div class="tools-grid">
+        <div class="tool">VS Code</div>
+        <div class="tool">Android Studio</div>
+        <div class="tool">Kali Linux</div>
+        <div class="tool">Git & GitHub</div>
+        <div class="tool">Figma</div>
+        <div class="tool">MySQL</div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Interested in working together?</p>
+          <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          <div class="socials">
+            <a href="https://github.com/lahirudasun777" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/lahiru-dasun-0a4898224/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+
+        <form id="contactForm">
+          <label>Name<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Lahiru Dasun — Built with ❤️</p>
     </div>
   </footer>
+
+  <!-- Modal for certificate preview -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close">✕</button>
+      <img id="modalImg" src="" alt="certificate preview">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
