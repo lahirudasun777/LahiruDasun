@@ -3,227 +3,221 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lahiru Dasun — Software Engineer</title>
+  <title>Lahiru Dasun — Unique Portfolio</title>
+  <meta name="description" content="Lahiru Dasun — Developer, mobile apps, and security enthusiast. Unique portfolio." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Lahiru Dasun — Software Engineer. Portfolio showcasing projects, skills, and certificates." />
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#">LahiruDasun</a>
-      <nav class="nav-links">
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#">Lahiru<span class="dot">.</span></a>
+      <nav class="main-nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#certs">Certificates</a>
+        <a href="#certs">Certs</a>
         <a href="#contact">Contact</a>
-        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
       </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="toggle theme">🌙</button>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- Hero with 3D floating card -->
     <section class="hero" id="home">
-      <div class="container hero-inner">
+      <div class="wrap hero-grid">
         <div class="hero-left">
-          <h1>Hi, I’m <span class="accent">Lahiru Dasun</span></h1>
-          <p class="lead">Software Engineer • React Native • Java • Ethical Hacking</p>
-          <p>I build clean, fast and secure apps — currently learning, shipping projects, and leveling up every day.</p>
+          <h1>Hey, I’m <span class="neon">Lahiru</span></h1>
+          <p class="sub">Software Engineer • React Native • Java • Security Enthusiast</p>
+          <p class="intro">I build products that solve problems. I like fast apps, clean code, and systems that stay secure. Welcome to my unique corner of the web.</p>
 
-          <div class="cta">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn outline" href="/assets/Lahiru_Dasun_Resume.pdf" download>Download Resume</a>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn ghost" href="assets/resume.pdf" download>Download Resume</a>
           </div>
 
-          <div class="badges">
-            <!-- Replace shields links with your username where needed -->
-            <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-            <img src="https://img.shields.io/badge/React_Native-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black" alt="React Native">
-            <img src="https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+          <div class="mini-stats">
+            <div><strong>21</strong><span>Age</span></div>
+            <div><strong>5+</strong><span>Projects</span></div>
+            <div><strong>3</strong><span>Certs</span></div>
           </div>
         </div>
 
         <div class="hero-right">
-          <!-- Add your portrait at assets/profile.jpg -->
-          <div class="profile-card">
-            <img src="assets/profile/Profile.jpg" alt="Lahiru Dasun">
-            <div class="profile-info">
+          <div id="floatCard" class="float-card" data-tilt>
+            <div class="card-top">
+              <img src="assets/profile.jpg" alt="Lahiru profile">
+            </div>
+            <div class="card-body">
               <h3>Lahiru Dasun</h3>
-              <p>Software Engineer • Full-stack • Security enthusiast</p>
-              <div class="socials">
+              <p>Mobile & Software Developer</p>
+              <div class="chips">
+                <span>React Native</span>
+                <span>Java</span>
+                <span>Python</span>
+              </div>
+              <div class="card-footer">
                 <a href="https://github.com/lahirudasun777" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/lahiru-dasun-0a4898224/" target="_blank">LinkedIn</a>
               </div>
             </div>
           </div>
+          <div class="glow"></div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="container about" id="about">
+    <!-- About -->
+    <section class="wrap about" id="about">
       <div class="about-grid">
-        <div>
-          <h2>About Me</h2>
-          <p>Hello — I'm <strong>Lahiru</strong>. I'm 21 and currently pursuing Software Engineering. I enjoy building mobile apps with React Native, learning Java deeply, and experimenting with cybersecurity tools. My mission: ship useful products and grow into a tech leader and entrepreneur.</p>
-
-          <ul class="traits">
-            <li>Fast learner & problem solver</li>
-            <li>Collaborative team player</li>
-            <li>Curious about security & systems</li>
+        <div class="about-text">
+          <h2>About me</h2>
+          <p>I’m a 21-year-old software engineering student and developer from Sri Lanka. I enjoy building mobile apps, learning system security, and turning ideas into real products. I’m focused on shipping projects, improving my craft, and creating scalable solutions.</p>
+          <ul class="about-list">
+            <li><strong>Signature talent:</strong> Building full-stack mobile apps</li>
+            <li><strong>Strength:</strong> Fast learner, problem solver, curious about security</li>
+            <li><strong>Goal:</strong> Ship products that help people and grow into a technical leader</li>
           </ul>
         </div>
-
-        <div>
-          <h3>Signature Talents</h3>
-          <div class="talents">
-            <div class="talent">Full-stack Development</div>
-            <div class="talent">Mobile Apps (React Native)</div>
-            <div class="talent">Java & OOP</div>
-            <div class="talent">Ethical Hacking Basics</div>
-            <div class="talent">Product Thinking</div>
+        <div class="about-cta">
+          <div class="card-cta">
+            <h3>Want to work together?</h3>
+            <p>Open to internships, freelance projects, and collaborations.</p>
+            <a class="btn primary" href="#contact">Contact me</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="container skills" id="skills">
+    <!-- Skills Wheel -->
+    <section class="wrap skills" id="skills">
       <h2>Skills</h2>
-      <div class="skill-grid">
-        <div class="skill-card">
-          <h4>Java</h4>
-          <div class="bar"><div class="bar-fill" style="width:90%">90%</div></div>
+      <div class="skills-grid">
+        <div class="wheel-wrap">
+          <svg id="skillsWheel" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"></svg>
+          <div class="wheel-center">Skills</div>
         </div>
-        <div class="skill-card">
-          <h4>React Native</h4>
-          <div class="bar"><div class="bar-fill" style="width:85%">85%</div></div>
-        </div>
-        <div class="skill-card">
-          <h4>Python</h4>
-          <div class="bar"><div class="bar-fill" style="width:80%">80%</div></div>
-        </div>
-        <div class="skill-card">
-          <h4>Ethical Hacking</h4>
-          <div class="bar"><div class="bar-fill" style="width:70%">70%</div></div>
+
+        <div class="skills-list" id="skillInfo">
+          <h3>Click a skill</h3>
+          <p class="muted">Interactive wheel: click any skill to see projects that use it.</p>
+          <div class="examples" id="skillExamples">
+            <!-- Filled by JS -->
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="container projects" id="projects">
+    <!-- Projects timeline (horizontal) -->
+    <section class="wrap projects" id="projects">
       <h2>Projects</h2>
-      <p class="muted">Click a project to view details or open the repo/demo.</p>
-
-      <div class="project-grid">
-        <!-- Example project card - duplicate & edit for each project -->
-        <article class="project-card">
-          <img src="assets/project-chatapp.png" alt="Chat App screenshot">
-          <div class="project-body">
-            <h3>Chat App (React Native)</h3>
-            <p>Real-time chat app using Firebase. Features: authentication, real-time messages, media sharing.</p>
-            <div class="project-tags">React Native • Firebase • JS</div>
-            <div class="project-actions">
-              <a class="btn" href="#" target="_blank">Live Demo</a>
-              <a class="btn outline" href="https://github.com/lahirudasun777/chat-app" target="_blank">Repo</a>
+      <p class="muted">Horizontal timeline — drag to scroll or use arrows.</p>
+      <div class="timeline-wrap">
+        <button class="t-btn left" id="tLeft">◀</button>
+        <div class="timeline" id="timeline">
+          <!-- Project item (repeat) -->
+          <article class="timeline-item">
+            <img src="assets/project-1.png" alt="project 1">
+            <div class="ti-body">
+              <h3>Chat App</h3>
+              <p>Real-time chat app using Firebase for auth & messaging. Mobile-first with clean UI.</p>
+              <div class="tags">React Native • Firebase</div>
+              <div class="actions">
+                <a class="btn" href="https://github.com/lahirudasun777/chat-app" target="_blank">Repo</a>
+                <a class="btn ghost" href="#" target="_blank">Live</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card">
-          <img src="assets/project-discover.png" alt="Discover USA Wonders screenshot">
-          <div class="project-body">
-            <h3>Discover USA Wonders</h3>
-            <p>Travel discovery site with curated destinations and itinerary suggestions.</p>
-            <div class="project-tags">HTML • CSS • JS</div>
-            <div class="project-actions">
-              <a class="btn" href="#" target="_blank">Live Demo</a>
-              <a class="btn outline" href="https://github.com/lahirudasun777/Discover-USA-Wonders" target="_blank">Repo</a>
+          <article class="timeline-item">
+            <img src="assets/project-2.png" alt="project 2">
+            <div class="ti-body">
+              <h3>Discover USA Wonders</h3>
+              <p>Travel discovery site with curated destinations and responsive design.</p>
+              <div class="tags">HTML • CSS • JS</div>
+              <div class="actions">
+                <a class="btn" href="https://github.com/lahirudasun777/Discover-USA-Wonders" target="_blank">Repo</a>
+                <a class="btn ghost" href="#" target="_blank">Live</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Add more project cards here -->
+          <article class="timeline-item">
+            <img src="assets/project-3.png" alt="project 3">
+            <div class="ti-body">
+              <h3>Portfolio Website</h3>
+              <p>My personal portfolio (this site). Built for speed and visual impact.</p>
+              <div class="tags">HTML • CSS • JS</div>
+              <div class="actions">
+                <a class="btn" href="https://github.com/lahirudasun777/LahiruDasun" target="_blank">Repo</a>
+                <a class="btn ghost" href="#" target="_blank">Live</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="t-btn right" id="tRight">▶</button>
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
-    <section class="container certs" id="certs">
+    <!-- Certificates -->
+    <section class="wrap certs" id="certs">
       <h2>Certificates</h2>
-      <p class="muted">Click to view certificate (PDF or image).</p>
-
       <div class="cert-grid">
-        <div class="cert-card" tabindex="0" data-src="assets/cert-python.png">
-          <img src="assets/Certificates/python.png" alt="Python Certificate">
-          <div class="cert-body">
-            <h4>Python for Everybody</h4>
-            <p>Issued by Hacker Rank — 2025</p>
-          </div>
+        <div class="cert" data-src="assets/cert-1.png">
+          <img src="assets/cert-1.png" alt="cert 1">
+          <h4>Python for Everybody</h4>
+          <p class="muted">University of Michigan — 2024</p>
         </div>
-
-        <div class="cert-card" tabindex="0" data-src="assets/cert-react.png">
-          <img src="assets/Certificates/sql_basic certificate.pdf" alt="SQL Basic">
-          <div class="cert-body">
-            <h4>React Basics</h4>
-            <p>Issued by Hacker Rank — 2025</p>
-          </div>
-        </div>
-
+        <!-- add more certs as needed -->
       </div>
     </section>
 
-    <!-- TOOLS -->
-    <section class="container tools" id="tools">
-      <h2>Tools & Software</h2>
-      <div class="tools-grid">
-        <div class="tool">VS Code</div>
-        <div class="tool">Android Studio</div>
-        <div class="tool">Kali Linux</div>
-        <div class="tool">Git & GitHub</div>
-        <div class="tool">Figma</div>
-        <div class="tool">MySQL</div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="container contact" id="contact">
+    <!-- Contact -->
+    <section class="wrap contact" id="contact">
       <h2>Contact</h2>
       <div class="contact-grid">
-        <div>
-          <p>Interested in working together?</p>
-          <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <div class="contact-info">
+          <p class="muted">Email</p>
+          <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+
+          <p class="muted">Location</p>
+          <p>Sri Lanka</p>
+
           <div class="socials">
             <a href="https://github.com/lahirudasun777" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/lahiru-dasun-0a4898224/" target="_blank">LinkedIn</a>
           </div>
         </div>
 
-        <form id="contactForm">
+        <form class="contact-form" id="contactForm">
           <label>Name<input name="name" required></label>
           <label>Email<input name="email" type="email" required></label>
-          <label>Message<textarea name="message" rows="4" required></textarea></label>
-          <button class="btn primary" type="submit">Send Message</button>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send</button>
+            <a class="btn ghost" href="assets/resume.pdf" download>Resume</a>
+          </div>
         </form>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Lahiru Dasun — Built with ❤️</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> Lahiru Dasun — Crafted with code ❤️</p>
     </div>
   </footer>
 
-  <!-- Modal for certificate preview -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-content">
-      <button id="modalClose" class="modal-close">✕</button>
-      <img id="modalImg" src="" alt="certificate preview">
+  <!-- Modal / Lightbox for certificates or project details -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lb-inner">
+      <button id="lbClose" class="lb-close">✕</button>
+      <img id="lbImg" src="" alt="preview">
     </div>
   </div>
 
