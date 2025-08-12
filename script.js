@@ -1,4 +1,4 @@
-/ Interactive behaviors: tilt card, skills wheel, timeline controls, lightbox, theme, contact form
+// Interactive behaviors: tilt card, skills wheel, timeline controls, lightbox, theme, contact form
 
 (() => {
   // Footer year
@@ -110,9 +110,18 @@
 
     // Contact form: mailto fallback
     const form = document.getElementById('contactForm');
-    if(form){ form.addEventListener('submit', (e)=>{ e.preventDefault(); const fd = new FormData(form); const name = fd.get('name'); const email = fd.get('email'); const msg = fd.get('message'); window.location.href = `mailto:your-email@example.com?subject=${encodeURIComponent('Contact from ' + name)}&body=${encodeURIComponent(msg + '
+if(form){ 
+  form.addEventListener('submit', (e) => { 
+    e.preventDefault(); 
+    const fd = new FormData(form); 
+    const name = fd.get('name'); 
+    const email = fd.get('email'); 
+    const msg = fd.get('message'); 
+    window.location.href = `mailto:your-email@example.com?subject=${encodeURIComponent('Contact from ' + name)}&body=${encodeURIComponent(`${msg}
 
-From: ' + name + ' <' + email + '>')}`; }); }
+From: ${name} <${email}>`)}`;
+  }); 
+}
 
   });
 })();
