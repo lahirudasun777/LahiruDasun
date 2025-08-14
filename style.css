@@ -96,5 +96,54 @@ body.light{--bg:#f7fbff;--panel:#ffffff;--muted:#445566;--neon:#0077aa;--text:#0
   .timeline{padding:10px}
 }
 
+.project-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info h3 {
+  margin-top: 0;
+  color: #00ffcc;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #00ffcc;
+  color: #111;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00cc99;
+}
+
+
 /* accessibility focus */
 a:focus,button:focus,input:focus{outline:2px solid rgba(6,214,255,0.12);outline-offset:2px}
